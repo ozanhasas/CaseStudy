@@ -239,7 +239,7 @@ if __name__ == "__main__":
 
     objcet_creater = ObjectCreater()
     db_processer = DbProcesser(config['DB'])  
-    json_reader = JsonReader(config['DATA']['path'])  #config['DATA']['path']
+    json_reader = JsonReader(config['DATA']['path'])  
 
     data_migrater = DataPipeline(objcet_creater,db_processer,json_reader.data)
     data_migrater.run()
@@ -247,5 +247,3 @@ if __name__ == "__main__":
 
     end = time.time()
     print(end - start)
-
-## to do dbde olan verilerin kontrolu
