@@ -55,6 +55,8 @@ DataPipeline is a orchestrator. It is responsible for data flow.
   - Transform and creating objects with ObjcetCreater.
   - Once objects are created, they are added to a list. Before adding to list, each object are checked for validation and if it is existing in the list.
   - All object in the list are inserted into database in a single commit operation. This minimizes the number of transactions and ensures efficient database operations.
+
+Note: Docker desktop was used to stand up the PostgreSQL database.
   
   
   
