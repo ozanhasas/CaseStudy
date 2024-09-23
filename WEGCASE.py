@@ -72,7 +72,7 @@ class ObjectCreater:
         category_data = row.get("category")
 
         try:
-            id = int(category_data.get("id"))     #eger int olamaycak bir degere sahipse veya category_data bos ise hata atar.
+            id = int(category_data.get("id")) 
         except Exception as e:
             warn = Warning(f"Category is not created due to {e}")
             logging.warning(warn)
